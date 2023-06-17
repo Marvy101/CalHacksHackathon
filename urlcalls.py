@@ -1,8 +1,6 @@
-import openai
 import re
 from urllib.parse import urlparse
-
-openai.api_key = "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"
+from openaikey import openai
 
 
 def urls(request):
