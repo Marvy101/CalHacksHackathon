@@ -27,11 +27,15 @@ def url_corr(urls_lst):
     netloc_set = set([parsed_url.netloc for parsed_url in parsed_urls])
 
     if len(netloc_set) > 1:
-        print("Error: URLs are not from the same website.")
-        return Exception
-    else:
+        return 1
+    elif urls_lst:
         return urls_lst
+    else:
+        return 0
 
 
-# print(clean_message("buy something on amazon"))
-print(url_corr(clean_message("buy a double aa battery on amazon")))
+# command = process_input
+# print(command)
+
+# # print(clean_message("buy something on amazon"))
+# print(url_corr(clean_message("open gmail")))
