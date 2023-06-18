@@ -13,8 +13,8 @@ def process_input():
     elif url_corr(clean_message(input_text)) == 1:
         error_label.config(text="This request is not possible in the current update.")
     else:
-        error_label.config(text="One second...")
-        user_prompt = "cart"
+        error_label.config(text="")
+        user_prompt = "hello"
         browser_emulator(url_corr(clean_message(input_text))[0], user_prompt)
 
 
